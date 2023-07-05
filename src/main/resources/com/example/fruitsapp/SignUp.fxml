@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="482.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fruitsapp.SignUpController">
+   <children>
+      <ImageView fitHeight="503.0" fitWidth="604.0" layoutY="-11.0" opacity="0.97" pickOnBounds="true">
+         <image>
+            <Image url="@Images/Fruits.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="signup" layoutX="221.0" layoutY="387.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" style="-fx-border-color: #1ec23d;" text="SignUp" />
+      <TextField fx:id="enterFirstName" layoutX="53.0" layoutY="124.0" prefHeight="28.0" prefWidth="463.0" promptText="Enter First Name" style="-fx-border-color: #1ec23d;" />
+      <TextField fx:id="enterLastName" layoutX="53.0" layoutY="176.0" prefHeight="28.0" prefWidth="463.0" promptText="Enter Last Name" style="-fx-border-color: #1ec23d;" />
+      <TextField fx:id="enterUsername" layoutX="53.0" layoutY="232.0" prefHeight="28.0" prefWidth="463.0" promptText="Enter username" style="-fx-border-color: #1ec23d;" />
+      <PasswordField fx:id="confirmPassword" layoutX="59.0" layoutY="340.0" prefHeight="28.0" prefWidth="463.0" promptText="Confirm Passowrd " style="-fx-border-color: #1ec23d;" />
+      <PasswordField fx:id="enterPassword" layoutX="56.0" layoutY="289.0" prefHeight="26.0" prefWidth="463.0" promptText="Enter Password" style="-fx-border-color: #1ec23d;" />
+      <Label fx:id="Back" layoutX="170.0" layoutY="443.0" onMouseClicked="#Back" style="-fx-border-color: #1ec23d;" text="Already have an acccount Click here" />
+      <Label layoutX="177.0" layoutY="22.0" prefHeight="68.0" prefWidth="221.0" text="SignUp">
+         <font>
+            <Font name="System Bold" size="61.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="close" fitHeight="62.0" fitWidth="26.0" layoutX="564.0" layoutY="9.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8_delete_26px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

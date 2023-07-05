@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="746.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fruitsapp.DashController">
+   <children>
+      <AnchorPane layoutX="-8.0" prefHeight="23.0" prefWidth="754.0" style="-fx-background-color: #1e37c3;" />
+      <AnchorPane layoutX="-6.0" layoutY="19.0" prefHeight="71.0" prefWidth="754.0" style="-fx-background-color: #000000;" />
+      <ImageView fitHeight="297.0" fitWidth="754.0" layoutX="-7.0" layoutY="73.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/Fruits.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
