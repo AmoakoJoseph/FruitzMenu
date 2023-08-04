@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<!--<?import javafx.scene.text.Font?>-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fruitsapp.Reminders">
+   <children>
+      <ImageView fitHeight="778.0" fitWidth="1292.0" layoutX="-4.0" layoutY="-7.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/IMG_2210.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-11.0" layoutY="696.0" prefHeight="75.0" prefWidth="1300.0" style="-fx-background-color: blue;">
+         <children>
+            <ImageView fx:id="Reminders" fitHeight="37.0" fitWidth="73.0" layoutX="616.0" layoutY="21.0" onMouseClicked="#moveReminders" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/reminder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="About" fitHeight="37.0" fitWidth="51.0" layoutX="752.0" layoutY="21.0" onMouseClicked="#moveAbout" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/information.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Home" fitHeight="37.0" fitWidth="51.0" layoutX="680.0" layoutY="19.0" onMouseClicked="#moveDash" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/home.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Account" fitHeight="37.0" fitWidth="73.0" layoutX="545.0" layoutY="21.0" onMouseClicked="#moveAccount" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Logout" fitHeight="37.0" fitWidth="797.0" layoutX="22.0" layoutY="21.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/logout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="-2.0" layoutY="-2.0" prefHeight="58.0" prefWidth="1280.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-2.0">
+         <children>
+            <HBox layoutX="1142.0" layoutY="7.0" prefHeight="38.0" prefWidth="120.0">
+               <children>
+                  <ImageView fx:id="minimize" fitHeight="38.0" fitWidth="46.0" onMouseClicked="#Minimize" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/minimize.png" />
+                     </image>
+                  </ImageView>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <ImageView fx:id="maximize" fitHeight="66.0" fitWidth="42.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#Maximize" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/maximize.png" />
+                     </image>
+                  </ImageView>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <ImageView fx:id="close" fitHeight="37.0" fitWidth="37.0" onMouseClicked="#terminate" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/delete.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label layoutX="482.0" layoutY="6.0" prefHeight="44.0" prefWidth="163.0" text="FruitzEase">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="reminderTable" layoutX="88.0" layoutY="185.0" prefHeight="350.0" prefWidth="998.0">
+         <columns>
+            <!-- Corrected cellValueFactory attributes -->
+            <TableColumn fx:id="dateColumn" prefWidth="200.0" text="Date">
+               <cellValueFactory>
+                  <PropertyValueFactory property="date" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="descriptionColumn" prefWidth="600.0" text="Description">
+               <cellValueFactory>
+                  <PropertyValueFactory property="description" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="timeColumn" prefWidth="200.0" text="Time">
+               <cellValueFactory>
+                  <PropertyValueFactory property="time" />
+               </cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+
+
+      <TextArea fx:id="reminderTextArea" layoutX="94.0" layoutY="556.0" prefHeight="100.0" prefWidth="898.0" promptText="Add Reminder" />
+
+
+      <!-- The DatePicker element -->
+      <DatePicker fx:id="reminderDatePicker" layoutX="1002.0" layoutY="96.0" prefHeight="38.0" prefWidth="242.0" />
+
+      <Button fx:id="reminder" layoutX="1027.0" layoutY="611.0" mnemonicParsing="false" onMouseClicked="#addreminder" prefHeight="40.0" prefWidth="181.0" style="-fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30;" text="Add">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete" layoutX="1022.0" layoutY="550.0" mnemonicParsing="false" onMouseClicked="#deletereminder" prefHeight="40.0" prefWidth="181.0" style="-fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30;" text="Delete">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

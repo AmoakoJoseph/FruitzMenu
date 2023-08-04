@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fruitsapp.DashController">
+   <children>
+      <BorderPane layoutX="6.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="200.0" prefWidth="435.0" styleClass="right-bar" stylesheets="@../values/style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="179.0" prefWidth="435.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="212.0" fitWidth="256.0" layoutX="84.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@FruizEase.png" />
+                           </image>
+                        </ImageView>
+                     </children></Pane>
+                  <VBox fx:id="chosenFruitCard" alignment="CENTER" prefHeight="535.0" prefWidth="100.0" stylesheets="@../values/style.css">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox prefHeight="60.0" prefWidth="335.0">
+                           <children>
+                              <Label fx:id="fruitNameLable" prefHeight="52.0" prefWidth="318.0" text="Peach" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="36.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <ImageView fx:id="fruitImg" fitHeight="170.0" fitWidth="285.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/peach.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <Separator prefHeight="0.0" prefWidth="118.0" />
+                              <Separator prefHeight="0.0" prefWidth="118.0" />
+                           </children>
+                        </HBox>
+                        <Button fx:id="open" mnemonicParsing="false" onMouseClicked="#OpenFiles" prefHeight="50.0" prefWidth="270.0" styleClass="add-btn" stylesheets="@../values/style.css" text="Open" textFill="#828282">
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <styleClass>
+                        <String fx:value="chosen-fruit-card" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </VBox>
+                  <Pane prefHeight="57.0" prefWidth="435.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="781.0">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <Pane prefHeight="65.0" prefWidth="393.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label fx:id="Account" layoutX="475.0" layoutY="-5.0" onMouseClicked="#moveAccount" prefHeight="62.0" prefWidth="100.0" text="My Account" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="Username" layoutX="1.0" layoutY="7.0" prefHeight="36.0" prefWidth="287.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Label>
+                           </children></Pane>
+                        <HBox prefHeight="27.0" prefWidth="150.0">
+                           <children>
+                              <ImageView fx:id="minimize" fitHeight="50.0" fitWidth="46.0" onMouseClicked="#Minimize" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/minimize.png" />
+                                 </image>
+                              </ImageView>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <ImageView fx:id="maximize" fitHeight="52.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#Maximize" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/maximize.png" />
+                                 </image>
+                              </ImageView>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <ImageView fx:id="close" fitHeight="42.0" fitWidth="54.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/delete.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="84.0" prefWidth="96.0" />
+                        <Pane prefHeight="84.0" prefWidth="96.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" layoutX="24.0" layoutY="16.0" prefHeight="65.0" prefWidth="614.0" stylesheets="@../values/style.css">
+                                 <children>
+                                    <TextField fx:id="enterFruit" prefHeight="40.0" prefWidth="715.0" promptText="Enter fruit name" styleClass="transparent" stylesheets="@../values/style.css">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Cambria" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <Button fx:id="search" mnemonicParsing="false" onMouseClicked="#getFruit" prefHeight="40.0" prefWidth="362.0" styleClass="search-button" stylesheets="@../values/style.css" text="Search" textFill="WHITE" />
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="search-box" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </HBox>
+                           </children></Pane>
+                        <Pane prefHeight="84.0" prefWidth="96.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ScrollPane fx:id="scroll" prefHeight="570.0" prefWidth="785.0" styleClass="transparent" stylesheets="@../values/style.css">
+                           <content>
+                              <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

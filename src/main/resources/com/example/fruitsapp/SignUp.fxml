@@ -7,31 +7,41 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="482.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fruitsapp.SignUpController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="701.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fruitsapp.SignUpController">
    <children>
-      <ImageView fitHeight="503.0" fitWidth="604.0" layoutY="-11.0" opacity="0.97" pickOnBounds="true">
+      <ImageView fitHeight="432.0" fitWidth="541.0" layoutX="160.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Images/Fruits.jpg" />
+            <Image url="@Images/preview.png" />
          </image>
       </ImageView>
-      <Button fx:id="signup" layoutX="221.0" layoutY="387.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" style="-fx-border-color: #1ec23d;" text="SignUp" />
-      <TextField fx:id="enterFirstName" layoutX="53.0" layoutY="124.0" prefHeight="28.0" prefWidth="463.0" promptText="Enter First Name" style="-fx-border-color: #1ec23d;" />
-      <TextField fx:id="enterLastName" layoutX="53.0" layoutY="176.0" prefHeight="28.0" prefWidth="463.0" promptText="Enter Last Name" style="-fx-border-color: #1ec23d;" />
-      <TextField fx:id="enterUsername" layoutX="53.0" layoutY="232.0" prefHeight="28.0" prefWidth="463.0" promptText="Enter username" style="-fx-border-color: #1ec23d;" />
-      <PasswordField fx:id="confirmPassword" layoutX="59.0" layoutY="340.0" prefHeight="28.0" prefWidth="463.0" promptText="Confirm Passowrd " style="-fx-border-color: #1ec23d;" />
-      <PasswordField fx:id="enterPassword" layoutX="56.0" layoutY="289.0" prefHeight="26.0" prefWidth="463.0" promptText="Enter Password" style="-fx-border-color: #1ec23d;" />
-      <Label fx:id="Back" layoutX="170.0" layoutY="443.0" onMouseClicked="#Back" style="-fx-border-color: #1ec23d;" text="Already have an acccount Click here" />
-      <Label layoutX="177.0" layoutY="22.0" prefHeight="68.0" prefWidth="221.0" text="SignUp">
+      <Button fx:id="signup" layoutX="225.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#moveFruits" prefHeight="26.0" prefWidth="106.0" style="-fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30; -fx-border-color: #ffffff;" text="SignUp" />
+      <TextField fx:id="enterLastName" layoutX="18.0" layoutY="175.0" prefHeight="28.0" prefWidth="335.0" promptText="Enter Last Name" style="-fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30; -fx-background-color: #e3e3e3e3;" />
+      <TextField fx:id="enterUsername" layoutX="18.0" layoutY="224.0" prefHeight="28.0" prefWidth="335.0" promptText="Enter username" style="-fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30; -fx-background-color: #e3e3e3;" />
+      <PasswordField fx:id="enterPassword" layoutX="18.0" layoutY="268.0" prefHeight="28.0" prefWidth="335.0" promptText="Enter Password" style="-fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30; -fx-background-color: #e3e3e3;" />
+      <Label fx:id="Back" layoutX="28.0" layoutY="325.0" onMouseClicked="#Back" text="I am already a member" textFill="#050505">
          <font>
-            <Font name="System Bold" size="61.0" />
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="28.0" layoutY="30.0" prefHeight="35.0" prefWidth="85.0" text="SignUp">
+         <font>
+            <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <ImageView fx:id="close" fitHeight="62.0" fitWidth="26.0" layoutX="564.0" layoutY="9.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="close" fitHeight="62.0" fitWidth="26.0" layoutX="650.0" layoutY="14.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Images/icons8_delete_26px.png" />
+            <Image url="@icons/delete.png" />
          </image>
       </ImageView>
+      <ImageView fitHeight="135.0" fitWidth="176.0" layoutX="243.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FruizEase.png" />
+         </image>
+      </ImageView>
+      <Line endX="100.0" layoutX="116.0" layoutY="350.0" startX="-100.0" />
+      <TextField fx:id="enterFirstName" layoutX="18.0" layoutY="126.0" prefHeight="28.0" prefWidth="335.0" promptText="Enter First Name" style="-fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30; -fx-background-color: #e3e3e3;" />
+      <Label fx:id="wrongSignup" layoutX="60.0" layoutY="92.0" prefHeight="22.0" prefWidth="201.0" />
    </children>
 </AnchorPane>

@@ -5,7 +5,317 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f3ecb2b-b033-4091-a7c0-93b3cde74bd3" name="Changes" comment="git push">
+      <change afterPath="$PROJECT_DIR$/Library/GNAvatarView-1.0.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-base-17.0.2-linux.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-base-17.0.2-win.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-base-17.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-controls-17.0.2-linux.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-controls-17.0.2-win.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-controls-17.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-fxml-17.0.2-linux.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-fxml-17.0.2-win.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-graphics-17.0.2-linux.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-graphics-17.0.2-win.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-graphics-17.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.base/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.base/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.base/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.controls/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.controls/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.controls/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.fxml/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.fxml/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.fxml/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.graphics/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.graphics/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.graphics/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.graphics/gluon.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.graphics/jpeg_fx.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.graphics/mesa3d.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.media/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.media/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.media/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.media/directshow.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.media/glib.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.media/gstreamer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.media/libffi.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.swing/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.swing/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.swing/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.web/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.web/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.web/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.web/icu_web.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.web/libxml2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.web/libxslt.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/legal/javafx.web/webkit.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/javafx-swt.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/javafx.base.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/javafx.controls.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/javafx.fxml.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/javafx.graphics.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/javafx.media.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/javafx.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/javafx.swing.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/javafx.web.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libavplugin-54.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libavplugin-56.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libavplugin-57.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libavplugin-ffmpeg-56.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libavplugin-ffmpeg-57.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libavplugin-ffmpeg-58.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libavplugin-ffmpeg-59.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libdecora_sse.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libfxplugins.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libglass.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libglassgtk2.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libglassgtk3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libgluon_drm-1.1.7.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libgstreamer-lite.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libjavafx_font.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libjavafx_font_freetype.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libjavafx_font_pango.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libjavafx_iio.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libjfxmedia.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libjfxwebkit.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libprism_common.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libprism_es2.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/lib/libprism_sw.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-sdk-20.0.1/src.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-swing-17.0.2-linux.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/javafx-swing-17.0.2-win.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/jfoenix-17-0.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/jquery-3.7.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.base/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.base/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.base/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.controls/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.controls/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.controls/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.fxml/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.fxml/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.fxml/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.graphics/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.graphics/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.graphics/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.graphics/jpeg_fx.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.graphics/mesa3d.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.media/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.media/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.media/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.media/directshow.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.media/glib.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.media/gstreamer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.media/libffi.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.swing/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.swing/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.swing/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.web/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.web/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.web/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.web/icu_web.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.web/libxml2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.web/libxslt.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/legal/javafx.web/webkit.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/javafx-swt.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/javafx.base.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/javafx.controls.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/javafx.fxml.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/javafx.graphics.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/javafx.media.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/javafx.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/javafx.swing.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/javafx.web.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libavplugin-54.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libavplugin-56.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libavplugin-57.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libavplugin-ffmpeg-56.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libavplugin-ffmpeg-57.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libavplugin-ffmpeg-58.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libavplugin-ffmpeg-59.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libdecora_sse.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libfxplugins.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libglass.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libglassgtk2.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libglassgtk3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libgstreamer-lite.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libjavafx_font.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libjavafx_font_freetype.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libjavafx_font_pango.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libjavafx_iio.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libjfxmedia.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libjfxwebkit.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libprism_common.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libprism_es2.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib/libprism_sw.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/src.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/sqlite-jdbc-3.42.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/timepicker-0.3.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/timepicker-1.14.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fruits.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fruits.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identifier.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jfoenix-9.0.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reminders.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sqlite-jdbc-3.42.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/About.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/DBConnectors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/ItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/MyListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/ProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/Reminder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/Reminders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/About.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Carousel/79ddeebf-e119-4d0c-8ce9-6b03d46e9146.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Carousel/GWAT9780.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Carousel/almonds.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Carousel/collage-3d-fruits-textures.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Carousel/creative-composition-with-fruits-texture-vibrant-colors.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Carousel/fruit-texture-concept-composition.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Dash.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/IMG_2207.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/IMG_2208.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/IMG_2209.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/IMG_2210.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/green.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/smoothie.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Profile.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Reminders.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/icons/edit-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/icons/find.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/icons/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/img/banana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/img/cherry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/img/coconut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/img/grapes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/img/kiwi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/img/mango.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/img/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/img/peach.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/img/strawberry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/img/watermelon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/item.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/values/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/DashController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/DashController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/Splash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/Splash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fruitsapp/SplashScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Dashboard.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/3377470.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/417-4171168_whatsapp-symbol-png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/425-4256855_dotted-circle-png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/513-5130138_dot-line-png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/92.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/Fruits.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/NK.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/amaterasu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/best.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/boruto.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/brothers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/collage-3d-fruits-textures.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/creative-composition-with-fruits-texture-vibrant-colors.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/fruit-texture-concept-composition.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_back_24px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_bell_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_chat_bubble_24px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_checkmark_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_circled_user_female_skin_type_1_and_2_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_circled_user_female_skin_type_3_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_circled_user_female_skin_type_5_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_circled_user_male_skin_type_3_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_circled_user_male_skin_type_4_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_circled_user_male_skin_type_5_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_circled_user_male_skin_type_6_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_close_window_26px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_close_window_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_customer_50px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_delete_26px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_delete_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_delete_database_40px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_delete_message_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_delete_trash_24px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_edit_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_enlarge_26px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_enlarge_30px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_exit_24px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_expand_26px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_expand_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_export_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_full_screen_64px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_help_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_laptop_with_cursor_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_menu_24px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_message_preview_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_messaging_48px_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_multiply_30px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_notification_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_pencil_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_person_24px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_person_80px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_search_24px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_search_24px_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_search_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_secured_letter_24px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_security_lock_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_send_64px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_settings_24px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_settings_40px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_speech_48px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/icons8_windows_client_48px_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/klipartz.com (49).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/klipartz.com - 2021-04-15T125732.173.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/legends.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/pexels-jeswin-thomas-1656059.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/pexels-scott-webb-1022934.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/pngegg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/pngwing.com (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/pngwing.com.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/unnamed.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/vecteezy_chatting-message-icon-template-black-color-editable_6692146.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/vecteezy_chatting-message-icon-template-black-color-editable_6692724.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (10).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (11).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (12).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (13).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (14).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (16).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (17).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (18).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (19).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (20).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (3).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (4).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (5).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (6).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (7).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (8).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper (9).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper(15).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Images/wallpaperflare.com_wallpaper.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Splash.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/Splash.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +333,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5d140ca2-4cd8-4de3-8fcf-10b91544c9c0" />
+        <option name="url" value="https://github.com/AmoakoJoseph/FruitsApp.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MigrationScriptOptions">
+    <option name="ignoreImplicitObjects" value="true" />
+    <option name="ignoreSourceCode" value="false" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2RuzrebNW3AWmXshvWRnuRNENn0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -38,24 +371,32 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_directory_selection": "/home/anonymous/IdeaProjects/FruitsApp/src/main/java/com",
-    "last_opened_file_path": "/home/anonymous/IdeaProjects/FruitsApp",
+    "git-widget-placeholder": "master",
+    "last_directory_selection": "/home/unknown/IdeaProjects/FruitsApp/src/main/java/com/example/fruitsapp",
+    "last_opened_file_path": "/home/unknown/IdeaProjects/FruitsApp/Library/javafx-base-17.0.2-linux.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "mysql"
+      "mariadb",
+      "mysql",
+      "sqlite"
     ]
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/fruitsapp" />
     </key>
@@ -63,8 +404,10 @@
       <recent name="com.example.fruitsapp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-20" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.example.fruitsapp.Main" />
       <module name="FruitsApp" />
       <extension name="coverage">
@@ -77,25 +420,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SplashScreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.fruitsapp.SplashScreen" />
-      <module name="FruitsApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.fruitsapp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.SplashScreen" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -112,7 +436,58 @@
       <workItem from="1688313707818" duration="7068000" />
       <workItem from="1688385802660" duration="15708000" />
       <workItem from="1688575449112" duration="1246000" />
-      <workItem from="1688580445506" duration="223000" />
+      <workItem from="1688580445506" duration="1649000" />
+      <workItem from="1688654543165" duration="8702000" />
+      <workItem from="1688726785613" duration="1219000" />
+      <workItem from="1688730948097" duration="1677000" />
+      <workItem from="1688801264449" duration="2219000" />
+      <workItem from="1688986930472" duration="750000" />
+      <workItem from="1688989362415" duration="5796000" />
+      <workItem from="1689150840712" duration="650000" />
+      <workItem from="1689151535457" duration="1919000" />
+      <workItem from="1689160266191" duration="3398000" />
+      <workItem from="1689169455416" duration="63000" />
+      <workItem from="1689181122672" duration="1470000" />
+      <workItem from="1689189201430" duration="588000" />
+      <workItem from="1689257876443" duration="4616000" />
+      <workItem from="1689278066483" duration="4452000" />
+      <workItem from="1689287754652" duration="871000" />
+      <workItem from="1689331831528" duration="2677000" />
+      <workItem from="1689335281581" duration="2585000" />
+      <workItem from="1689386433679" duration="7726000" />
+      <workItem from="1689409311349" duration="1927000" />
+      <workItem from="1689427969161" duration="771000" />
+      <workItem from="1689429162834" duration="51000" />
+      <workItem from="1689429278343" duration="1020000" />
+      <workItem from="1689516412473" duration="7891000" />
+      <workItem from="1689533598198" duration="2253000" />
+      <workItem from="1689539669322" duration="806000" />
+      <workItem from="1689546742122" duration="10644000" />
+      <workItem from="1689580147324" duration="443000" />
+      <workItem from="1689591977289" duration="13059000" />
+      <workItem from="1689616668537" duration="2314000" />
+      <workItem from="1689664984392" duration="4212000" />
+      <workItem from="1689678557631" duration="3910000" />
+      <workItem from="1689685850759" duration="6256000" />
+      <workItem from="1689728815737" duration="19959000" />
+      <workItem from="1689782141545" duration="10004000" />
+      <workItem from="1689845013041" duration="12325000" />
+      <workItem from="1689889270750" duration="21429000" />
+      <workItem from="1689970701546" duration="4787000" />
+      <workItem from="1690018246080" duration="7665000" />
+      <workItem from="1690113237042" duration="4345000" />
+      <workItem from="1690282919657" duration="4201000" />
+      <workItem from="1690298081540" duration="6377000" />
+      <workItem from="1690319609342" duration="7988000" />
+      <workItem from="1690396813917" duration="364000" />
+      <workItem from="1690656243793" duration="704000" />
+      <workItem from="1690676226891" duration="3800000" />
+      <workItem from="1690903934758" duration="345000" />
+      <workItem from="1690984487538" duration="11361000" />
+      <workItem from="1691056856438" duration="1147000" />
+      <workItem from="1691067013808" duration="1373000" />
+      <workItem from="1691070096861" duration="4795000" />
+      <workItem from="1691136899444" duration="3811000" />
     </task>
     <task id="LOCAL-00001" summary="git push">
       <created>1688576783053</created>
@@ -128,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688576903384</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="git push">
+      <created>1688580695997</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688580695997</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,18 +520,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="git push" />
     <option name="LAST_COMMIT_MESSAGE" value="git push" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/fruitsapp/DashController.java</url>
-          <line>11</line>
-          <properties field="logout" class="com.example.fruitsapp.DashController" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FruitsApp$Main.ic" NAME="Main Coverage Results" MODIFIED="1688308275888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

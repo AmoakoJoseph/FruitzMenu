@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="FruitsApp@localhost" uuid="873ffe0a-5723-4c3c-9816-b4e6e971e28c">
-      <driver-ref>mysql.8</driver-ref>
+    <data-source source="LOCAL" name="fruits.sqlite" uuid="ef8ce3fa-ef45-4f60-9dac-b309f480fa4c">
+      <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/FruitsApp</jdbc-url>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:fruits.sqlite</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
