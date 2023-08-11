@@ -34,7 +34,8 @@ public class Main extends Application {
         Parent splashRoot = FXMLLoader.load(getClass().getResource("Splash.fxml"));
         Scene splashScene = new Scene(splashRoot);
         primaryStage.setScene(splashScene);
-        primaryStage.initStyle(StageStyle.UNDECORATED);
+        primaryStage.setResizable(true);
+        primaryStage.setTitle("FruitzMenu");
         primaryStage.show();
 
         // Create a PauseTransition for the splash screen

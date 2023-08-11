@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -40,59 +38,28 @@
             </ImageView>
          </children>
       </Pane>
-      <Pane layoutX="-2.0" layoutY="-2.0" prefHeight="58.0" prefWidth="1280.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-2.0">
-         <children>
-            <HBox layoutX="1142.0" layoutY="7.0" prefHeight="38.0" prefWidth="120.0">
-               <children>
-                  <ImageView fx:id="minimize" fitHeight="38.0" fitWidth="46.0" onMouseClicked="#Minimize" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@icons/minimize.png" />
-                     </image>
-                  </ImageView>
-                  <Separator orientation="VERTICAL" prefHeight="200.0" />
-                  <ImageView fx:id="maximize" fitHeight="66.0" fitWidth="42.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#Maximize" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@icons/maximize.png" />
-                     </image>
-                  </ImageView>
-                  <Separator orientation="VERTICAL" prefHeight="200.0" />
-                  <ImageView fx:id="close" fitHeight="37.0" fitWidth="37.0" onMouseClicked="#terminate" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@icons/delete.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </HBox>
-            <Label layoutX="482.0" layoutY="6.0" prefHeight="44.0" prefWidth="163.0" text="FruitzEase">
-               <font>
-                  <Font size="29.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
       <AnchorPane layoutX="137.0" layoutY="260.0" prefHeight="397.0" prefWidth="1016.0" style="-fx-background-color: pink;">
          <children>
-            <Label layoutX="369.0" layoutY="20.0" prefHeight="35.0" prefWidth="244.0" text="About FruitzEase" textAlignment="CENTER" textFill="#0d1b3a">
+            <Label layoutX="369.0" layoutY="20.0" prefHeight="35.0" prefWidth="244.0" text="About FruitzMenu" textAlignment="CENTER" textFill="#0d1b3a">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Label>
-            <Label layoutX="258.0" layoutY="64.0" prefHeight="22.0" prefWidth="396.0" text="Welcome to FruitzEase - Your Fruit Suggestion App!" textAlignment="CENTER" textFill="#0d1b3a">
+            <Label layoutX="258.0" layoutY="64.0" prefHeight="22.0" prefWidth="396.0" text="Welcome to FruitzMenu - Your Fruit Suggestion App!" textAlignment="CENTER" textFill="#0d1b3a">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label layoutX="14.0" layoutY="92.0" prefWidth="988.0" text="FruitzEase is designed to help you discover and explore a wide variety of fruits. Our app provides fruit recommendations, nutritional information and interesting facts about different fruits." textFill="#0d1b3a" wrapText="true">
+            <Label layoutX="14.0" layoutY="92.0" prefWidth="988.0" text="FruitzMenu is designed to help you discover and explore a wide variety of fruits. Our app provides fruit recommendations, nutritional information and interesting facts about different fruits." textFill="#0d1b3a" wrapText="true">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <!-- Add more labels to display additional information about the app -->
          </children>
       </AnchorPane>
       <ImageView fitHeight="178.0" fitWidth="228.0" layoutX="496.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@FruizEase.png" />
+            <Image url="@Images/FruitzMenu.png" />
          </image>
       </ImageView>
    </children>

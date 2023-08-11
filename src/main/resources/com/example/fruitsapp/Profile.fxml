@@ -63,7 +63,7 @@
                      </font>
                   </Label>
                   <Separator orientation="VERTICAL" prefHeight="200.0" />
-                  <TextField fx:id="enterFirstname" prefHeight="46.0" prefWidth="784.0" style="-fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30;" />
+                  <TextField fx:id="enterFirstname" disable="true" prefHeight="46.0" prefWidth="784.0" style="-fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30;" />
                </children>
             </HBox>
             <HBox layoutX="17.0" layoutY="236.0" prefHeight="29.0" prefWidth="910.0">
@@ -74,7 +74,7 @@
                      </font>
                   </Label>
                   <Separator orientation="VERTICAL" prefHeight="200.0" />
-                  <TextField fx:id="enterLastname" prefHeight="46.0" prefWidth="784.0" style="-fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30;" />
+                  <TextField fx:id="enterLastname" disable="true" prefHeight="46.0" prefWidth="784.0" style="-fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30;" />
                </children>
             </HBox>
             <HBox layoutX="15.0" layoutY="311.0" prefHeight="29.0" prefWidth="910.0">
@@ -85,7 +85,7 @@
                      </font>
                   </Label>
                   <Separator orientation="VERTICAL" prefHeight="200.0" />
-                  <TextField fx:id="enterUsername" prefHeight="46.0" prefWidth="784.0" style="-fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30;" />
+                  <TextField fx:id="enterUsername" disable="true" prefHeight="46.0" prefWidth="784.0" style="-fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30;" />
                </children>
             </HBox>
             <HBox layoutX="17.0" layoutY="380.0" prefHeight="29.0" prefWidth="914.0">
@@ -96,7 +96,7 @@
                      </font>
                   </Label>
                   <Separator orientation="VERTICAL" prefHeight="200.0" />
-                  <TextField fx:id="enterPassword" prefHeight="46.0" prefWidth="784.0" style="-fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30;" />
+                  <TextField fx:id="enterPassword" disable="true" prefHeight="46.0" prefWidth="784.0" style="-fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30;" />
                </children>
             </HBox>
             <Label layoutX="13.0" layoutY="86.0" prefHeight="45.0" prefWidth="197.0" text="User Information">
@@ -106,42 +106,17 @@
             </Label>
             <ImageView fitHeight="167.0" fitWidth="230.0" layoutX="331.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@FruizEase.png" />
+                  <Image url="@Images/FruitzMenu.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Enable" fitHeight="60.0" fitWidth="65.0" layoutX="872.0" layoutY="417.0" onMouseClicked="#makeVisible" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/edit_32px.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
       <Separator layoutX="59.0" layoutY="592.0" prefHeight="38.0" prefWidth="916.0" />
-      <Pane layoutX="-2.0" layoutY="-2.0" prefHeight="58.0" prefWidth="1280.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-2.0">
-         <children>
-            <HBox layoutX="1142.0" layoutY="7.0" prefHeight="38.0" prefWidth="120.0">
-               <children>
-                  <ImageView fx:id="minimize" fitHeight="38.0" fitWidth="46.0" onMouseClicked="#Minimize" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@icons/minimize.png" />
-                     </image>
-                  </ImageView>
-                  <Separator orientation="VERTICAL" prefHeight="200.0" />
-                  <ImageView fx:id="maximize" fitHeight="66.0" fitWidth="42.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#Maximize" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@icons/maximize.png" />
-                     </image>
-                  </ImageView>
-                  <Separator orientation="VERTICAL" prefHeight="200.0" />
-                      <ImageView fx:id="close" fitHeight="37.0" fitWidth="37.0" onMouseClicked="#terminate" pickOnBounds="true" preserveRatio="true">
-                          <image>
-                              <Image url="@icons/delete.png" />
-                          </image>
-                      </ImageView>
-               </children>
-            </HBox>
-            <Label layoutX="482.0" layoutY="6.0" prefHeight="44.0" prefWidth="163.0" text="FruitzEase">
-               <font>
-                  <Font size="29.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
       <Button fx:id="Edit" layoutX="372.0" layoutY="637.0" mnemonicParsing="false" onMouseClicked="#Editinfo" prefHeight="40.0" prefWidth="362.0" styleClass="search-button" stylesheets="@../values/style.css" text="Update info" textFill="WHITE" />
       <ImageView fx:id="DeleteImage" fitHeight="48.0" fitWidth="56.0" layoutX="1026.0" layoutY="408.0" onMouseClicked="#deleteimage" pickOnBounds="true" preserveRatio="true">
          <image>

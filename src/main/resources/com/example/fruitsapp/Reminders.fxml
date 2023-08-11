@@ -2,8 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
@@ -11,7 +9,6 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -53,59 +50,24 @@
             </ImageView>
          </children>
       </Pane>
-      <Pane layoutX="-2.0" layoutY="-2.0" prefHeight="58.0" prefWidth="1280.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-2.0">
-         <children>
-            <HBox layoutX="1142.0" layoutY="7.0" prefHeight="38.0" prefWidth="120.0">
-               <children>
-                  <ImageView fx:id="minimize" fitHeight="38.0" fitWidth="46.0" onMouseClicked="#Minimize" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@icons/minimize.png" />
-                     </image>
-                  </ImageView>
-                  <Separator orientation="VERTICAL" prefHeight="200.0" />
-                  <ImageView fx:id="maximize" fitHeight="66.0" fitWidth="42.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#Maximize" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@icons/maximize.png" />
-                     </image>
-                  </ImageView>
-                  <Separator orientation="VERTICAL" prefHeight="200.0" />
-                  <ImageView fx:id="close" fitHeight="37.0" fitWidth="37.0" onMouseClicked="#terminate" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@icons/delete.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </HBox>
-            <Label layoutX="482.0" layoutY="6.0" prefHeight="44.0" prefWidth="163.0" text="FruitzEase">
-               <font>
-                  <Font size="29.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
       <TableView fx:id="reminderTable" layoutX="88.0" layoutY="185.0" prefHeight="350.0" prefWidth="998.0">
          <columns>
             <!-- Corrected cellValueFactory attributes -->
-            <TableColumn fx:id="dateColumn" prefWidth="200.0" text="Date">
+            <TableColumn fx:id="dateColumn" prefWidth="226.0" text="Date">
                <cellValueFactory>
                   <PropertyValueFactory property="date" />
                </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="descriptionColumn" prefWidth="600.0" text="Description">
+            <TableColumn fx:id="descriptionColumn" prefWidth="771.0" text="Description">
                <cellValueFactory>
                   <PropertyValueFactory property="description" />
-               </cellValueFactory>
-            </TableColumn>
-            <TableColumn fx:id="timeColumn" prefWidth="200.0" text="Time">
-               <cellValueFactory>
-                  <PropertyValueFactory property="time" />
                </cellValueFactory>
             </TableColumn>
          </columns>
       </TableView>
 
 
-      <TextArea fx:id="reminderTextArea" layoutX="94.0" layoutY="556.0" prefHeight="100.0" prefWidth="898.0" promptText="Add Reminder" />
+      <TextArea fx:id="reminderTextArea" layoutX="94.0" layoutY="556.0" prefHeight="100.0" prefWidth="898.0" promptText="Add Reminder" wrapText="true" />
 
 
       <!-- The DatePicker element -->

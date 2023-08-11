@@ -28,7 +28,7 @@
                      <children>
                         <ImageView fitHeight="212.0" fitWidth="256.0" layoutX="84.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@FruizEase.png" />
+                              <Image url="@Images/FruitzMenu.png" />
                            </image>
                         </ImageView>
                      </children></Pane>
@@ -104,27 +104,6 @@
                                     <Font size="20.0" />
                                  </font></Label>
                            </children></Pane>
-                        <HBox prefHeight="27.0" prefWidth="150.0">
-                           <children>
-                              <ImageView fx:id="minimize" fitHeight="50.0" fitWidth="46.0" onMouseClicked="#Minimize" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@icons/minimize.png" />
-                                 </image>
-                              </ImageView>
-                              <Separator orientation="VERTICAL" prefHeight="200.0" />
-                              <ImageView fx:id="maximize" fitHeight="52.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#Maximize" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@icons/maximize.png" />
-                                 </image>
-                              </ImageView>
-                              <Separator orientation="VERTICAL" prefHeight="200.0" />
-                              <ImageView fx:id="close" fitHeight="42.0" fitWidth="54.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@icons/delete.png" />
-                                 </image>
-                              </ImageView>
-                           </children>
-                        </HBox>
                      </children>
                   </HBox>
                   <HBox prefHeight="100.0" prefWidth="200.0">

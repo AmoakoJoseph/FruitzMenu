@@ -1,13 +1,13 @@
 package com.example.fruitsapp;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.control.TextField;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -17,11 +17,13 @@ import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
+
 
 public class DashController implements Initializable {
     public Label Username;
@@ -65,6 +67,11 @@ public class DashController implements Initializable {
 
     @FXML
     private MyListener myListener;
+
+    @FXML
+    private AnchorPane subscene;
+
+
 
     private List<Fruit> getData() {
         List<Fruit> fruits = new ArrayList<>();
@@ -159,17 +166,18 @@ public class DashController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+         displayRandomFruitNotification();
         fruits.addAll(getData());
-        if (fruits.size() > 0) {
+        if (!fruits.isEmpty()) {
             myListener = this::setChosenFruit;
             setChosenFruit(fruits.get(0));
         }
 
-        // Display the username of the currently logged-in user in the Username label
+
        String logUser= LoginController.logUser;
         if (logUser!= null && !logUser.isEmpty()) {
             Username.setText("Welcome " + logUser );
-            System.out.println("Username is" + logUser);
+            System.out.println("Username is " + logUser);
         }
 
 
@@ -201,7 +209,7 @@ public class DashController implements Initializable {
                 GridPane.setMargin(anchorPane, new Insets(10));
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Error");
         }
     }
 
@@ -217,7 +225,7 @@ public class DashController implements Initializable {
 
             fruitImg.setImage(image);
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.out.println("Can't find file");
         }
 
 //
@@ -240,12 +248,43 @@ public class DashController implements Initializable {
 
     @FXML
     public void OpenFiles(MouseEvent mouseEvent) {
+        String fruitName = fruitNameLable.getText();
 
+        if (fruitName != null && !fruitName.isEmpty()) {
+            openFruitDetailsStage(fruitName);
+        }
     }
 
     @FXML
     void getFruit(MouseEvent mouseEvent) {
+        String fruitName = enterFruit.getText();
+
+        if (fruitName != null && !fruitName.isEmpty()) {
+            openFruitDetailsStage(fruitName);
         }
+    }
+
+    private void openFruitDetailsStage(String fruitName) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("FruitDetails.fxml"));
+        try {
+            Parent root = loader.load();
+            FruitDetails controller = loader.getController();
+            Stage stage = new Stage();
+            controller.setStage(stage);
+            controller.displayFruitDetails(fruitName);
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            System.out.println("Error opening FruitDetails stage");
+        }
+    }
+
+
+
+
+
     @FXML
     public void Minimize(MouseEvent mouseEvent) {
         Stage stage = (Stage) Username.getScene().getWindow();
@@ -256,5 +295,23 @@ public class DashController implements Initializable {
     public void Maximize(MouseEvent mouseEvent) {
         Stage stage = (Stage) Username.getScene().getWindow();
         stage.setMaximized(!stage.isMaximized());
+    }
+
+    private void displayRandomFruitNotification() {
+        List<String> fruitsToEat = Arrays.asList(
+                "Apple", "Banana", "Cherry", "Coconut", "Grapes",
+                "Guava", "Kiwi", "Mango", "Orange", "Peach",
+                "Pineapple", "Pawpaw", "Strawberry", "Watermelon"
+        );
+
+        Random random = new Random();
+        String randomFruit = fruitsToEat.get(random.nextInt(fruitsToEat.size()));
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Healthy Reminder");
+        alert.setHeaderText("Eat a Fruit!");
+        alert.setContentText("How about enjoying a " + randomFruit + "? It's good for your health!");
+
+        alert.showAndWait();
     }
 }

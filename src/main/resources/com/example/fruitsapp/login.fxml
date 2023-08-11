@@ -18,21 +18,22 @@
             <Image url="@Images/IMG_2210.jpg" />
          </image>
       </ImageView>
-      <TextField fx:id="enterUsername" layoutX="353.0" layoutY="198.0" prefHeight="26.0" prefWidth="295.0" promptText="Username" style="-fx-background-radius: 30 30 30 30;" />
-      <PasswordField fx:id="enterPassword" layoutX="353.0" layoutY="252.0" prefHeight="26.0" prefWidth="295.0" promptText="Enter Password" style="-fx-background-radius: 30 30 30 30;" />
+      <TextField fx:id="enterUsername" layoutX="353.0" layoutY="198.0" prefHeight="26.0" prefWidth="295.0" promptText="Username" style="-fx-background-radius: 30 30 30 30;">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <PasswordField fx:id="enterPassword" layoutX="353.0" layoutY="252.0" prefHeight="26.0" prefWidth="295.0" promptText="Enter Password" style="-fx-background-radius: 30 30 30 30;">
+         <font>
+            <Font size="16.0" />
+         </font></PasswordField>
       <Button fx:id="button" layoutX="454.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#userLogin" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: #1e45c7; -fx-background-radius: 20 20 20 20;" text="Login" textFill="WHITE" />
-      <ImageView fx:id="close" fitHeight="31.0" fitWidth="30.0" layoutX="633.0" layoutY="14.0" onMouseClicked="#terminate" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@icons/delete.png" />
-         </image>
-      </ImageView>
       <Label fx:id="SignUp" layoutX="425.0" layoutY="334.0" onMouseClicked="#signup" text="New here? Click here." />
       <Label fx:id="wronglogin" layoutX="344.0" layoutY="166.0" prefHeight="26.0" prefWidth="313.0" textFill="#dd0b0b" wrapText="true" />
       <Pane layoutX="57.0" layoutY="168.0" prefHeight="166.0" prefWidth="200.0">
          <children>
             <ImageView fitHeight="225.0" fitWidth="251.0" layoutX="-25.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@FruizEase.png" />
+                  <Image url="@Images/FruitzMenu.png" />
                </image>
             </ImageView>
          </children>
@@ -40,17 +41,17 @@
       <Line endX="100.0" layoutX="290.0" layoutY="253.0" rotate="90.0" startX="-100.0" />
       <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="303.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Images/icons8_person_24px.png" />
+            <Image url="@icons/user.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="303.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Images/icons8_person_24px.png" />
+            <Image url="@icons/user.png" />
          </image>
       </ImageView>
       <Label layoutX="454.0" layoutY="141.0" text="Login">
          <font>
-            <Font size="17.0" />
+            <Font size="20.0" />
          </font>
       </Label>
    </children>

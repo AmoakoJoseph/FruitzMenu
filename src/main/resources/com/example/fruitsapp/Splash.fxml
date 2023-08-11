@@ -6,13 +6,10 @@
 
 <AnchorPane fx:id="splashPane" prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fruitsapp.Splash">
     <children>
-        <ImageView fx:id="splashImage" fitHeight="400" fitWidth="618.0">
+        <ImageView fx:id="splashImage" fitHeight="400" fitWidth="618.0" />
+      <ImageView fitHeight="212.0" fitWidth="357.0" layoutX="131.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Images/IMG_2209.jpg" />
-         </image></ImageView>
-      <ImageView fitHeight="212.0" fitWidth="357.0" layoutX="160.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@FruizEase.png" />
+            <Image url="@Images/FruitzMenu.png" />
          </image>
       </ImageView>
     </children>

@@ -12,10 +12,17 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.sql.SQLException;
+import java.sql.*;
+import java.time.Instant;
 import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.StringJoiner;
+
+import static com.example.fruitsapp.DBConnectors.getRemindersForDate;
+import static com.example.fruitsapp.DBConnectors.intToDate;
+import static com.example.fruitsapp.LoginController.logUser;
 
 public class Reminders {
 
@@ -69,77 +76,109 @@ public class Reminders {
 
     @FXML
     public void initialize() {
+        System.out.println("Initializing Reminders...");
+
         // Set tooltips for each ImageView
         setTooltip(About, "About");
         setTooltip(Home, "Home");
         setTooltip(Logout, "Logout");
         setTooltip(Reminders, "Reminders");
 
-        checkAndDisplayRemindersForToday();
-
-        remindersList = FXCollections.observableArrayList();
 
         dateColumn.setCellValueFactory(new PropertyValueFactory<>("date"));
         descriptionColumn.setCellValueFactory(new PropertyValueFactory<>("description"));
 
-        // Load data from reminders.txt and add it to remindersList
-        loadRemindersFromDatabase();
+        // Retrieve reminders from the database and populate the TableView
+        List<Reminder> reminders = DBConnectors.getAllReminders();
+        reminderTable.setItems(FXCollections.observableArrayList(reminders));
 
-        // Set the items of the TableView to the remindersList
-        reminderTable.setItems(remindersList);
+        loadReminders();
+
+
+        System.out.println("Reminders initialized.");
     }
 
-    private void loadRemindersFromDatabase() {
+
+    private void loadReminders() {
+        ObservableList<Reminder> reminders = FXCollections.observableArrayList();
         try {
-            List<Reminder> remindersFromDatabase = DBConnectors.getAllReminders();
-            remindersList.addAll(remindersFromDatabase);
+            String selectQuery = "SELECT Date, Description FROM Reminders WHERE Username = ?";
+            Connection connection = DBConnection.connectDB();
+            PreparedStatement preparedStatement = connection.prepareStatement(selectQuery);
+            preparedStatement.setString(1, logUser);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                int dateAsInt = resultSet.getInt("Date");
+                String description = resultSet.getString("Description");
+                reminders.add(new Reminder(dateAsInt, description));
+            }
+
+            resultSet.close();
+            preparedStatement.close();
         } catch (SQLException e) {
             e.printStackTrace();
-            System.err.println("Error: Failed to load reminders from the database.");
+            // Handle the exception appropriately
         }
+
+        reminderTable.setItems(reminders);
     }
 
 
-
-    @FXML
-    private void addReminder(LocalDate date, String description) {
-        if (date != null && !description.isEmpty()) {
-            Reminder newReminder = new Reminder(date, description);
-            remindersList.add(newReminder);
-            reminderTextArea.clear();
-            reminderDatePicker.setValue(null);
-        } else {
-            System.err.println("Error: Please enter both date and description.");
-        }
-    }
 
 
     @FXML
     public void addreminder(MouseEvent mouseEvent) {
         if (mouseEvent.getButton() == MouseButton.PRIMARY) {
-            LocalDate date = reminderDatePicker.getValue();
+            System.out.println("Adding reminder...");
+
+            int date = (int) reminderDatePicker.getValue().toEpochDay(); // Convert LocalDate to days since 1970-01-01
             String description = reminderTextArea.getText().trim();
 
-            if (date != null && !description.isEmpty()) {
+            if (!description.isEmpty()) {
                 try {
-                    DBConnectors.saveReminder(description, date);
+                    DBConnectors.saveReminder(description, LocalDate.ofEpochDay(date));
                     Reminder newReminder = new Reminder(date, description);
                     remindersList.add(newReminder);
                     reminderTextArea.clear();
                     reminderDatePicker.setValue(null);
 
+                    // Add the new reminder directly to the TableView
+                    reminderTable.getItems().add(newReminder);
+                    System.out.println("Saved");
                 } catch (SQLException e) {
-                    e.printStackTrace();
                     System.err.println("Error: Failed to save the reminder to the database.");
+                    e.printStackTrace(); // Print the exception details for debugging
                 }
             } else {
-                System.err.println("Error: Please enter both date and description.");
+                System.err.println("Error: Please enter a description.");
             }
         }
     }
 
-
     @FXML
+    void deletereminder(MouseEvent mouseEvent) {
+        if (mouseEvent.getButton() == MouseButton.PRIMARY) {
+            System.out.println("Deleting reminder...");
+
+            Reminder selectedReminder = reminderTable.getSelectionModel().getSelectedItem();
+            if (selectedReminder != null) {
+                remindersList.remove(selectedReminder);
+                reminderTable.getItems().remove(selectedReminder);
+                try {
+                    DBConnectors.deleteReminder(selectedReminder);
+                } catch (SQLException e) {
+                    System.out.print("Can't delete");
+                    e.printStackTrace(); // Print the exception details for debugging
+                }
+            }
+
+            System.out.println("Reminder deleted.");
+        }
+    }
+
+
+    /*@FXML
     public void deletereminder(MouseEvent mouseEvent) {
         if (mouseEvent.getButton() == MouseButton.PRIMARY) {
             Reminder selectedReminder = reminderTable.getSelectionModel().getSelectedItem();
@@ -149,11 +188,12 @@ public class Reminders {
                 try {
                     DBConnectors.deleteReminder(selectedReminder);
                 } catch (SQLException e) {
-                    e.printStackTrace();
+                    System.out.print("Can't delete");
                 }
             }
         }
     }
+*/
 
     private void setTooltip(ImageView imageView, String tooltipText) {
         Tooltip tooltip = new Tooltip(tooltipText);
@@ -200,30 +240,8 @@ public class Reminders {
         Main.changeScene(event, "login");
     }
 
-    private void checkAndDisplayRemindersForToday() {
-        LocalDate today = LocalDate.now();
 
-        List<Reminder> remindersForToday = null;
-        try {
-            remindersForToday = DBConnectors.getRemindersForDate(today);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
 
-        if (remindersForToday != null && !remindersForToday.isEmpty()) {
-            StringJoiner joiner = new StringJoiner("\n");
-            joiner.add("You have the following reminders for today:");
-            for (Reminder reminder : remindersForToday) {
-                joiner.add("- " + reminder.getDescription());
-            }
-            String message = joiner.toString();
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Today's Reminders");
-            alert.setHeaderText(null);
-            alert.setContentText(message);
-            alert.showAndWait();
-        }
-    }
 
 }
 

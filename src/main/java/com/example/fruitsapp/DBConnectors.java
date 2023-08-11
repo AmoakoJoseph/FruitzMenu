@@ -2,14 +2,15 @@ package com.example.fruitsapp;
 
 import javafx.scene.control.TextField;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.time.Instant;
 import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
+
+import static com.example.fruitsapp.LoginController.logUser;
 
 public class DBConnectors {
     public static void GetUserinfo(TextField firstNameField, TextField lastNameField, TextField usernameField, TextField passwordField, String loggedInUsername) throws SQLException {
@@ -28,29 +29,13 @@ public class DBConnectors {
         }
     }
 
-    public static List<Reminder> getAllReminders() throws SQLException {
-        List<Reminder> remindersList = new ArrayList<>();
-        String query = "SELECT Date, Description FROM Reminders";
-        try (Connection connection = DBConnection.connectDB();
-             PreparedStatement ps = connection.prepareStatement(query);
-             ResultSet rs = ps.executeQuery()) {
-            while (rs.next()) {
-                LocalDate date = rs.getDate("Date").toLocalDate();
-                String description = rs.getString("Description");
-                Reminder reminder = new Reminder(date, description);
-                remindersList.add(reminder);
-            }
-        }
-        return remindersList;
-    }
-
-    public static void saveReminder(String d, LocalDate dt) throws SQLException {
-        Reminder rm = new Reminder(dt,d);
+    public static void saveReminder(String description, LocalDate date) throws SQLException {
         try (Connection connection = DBConnection.connectDB();
              PreparedStatement preparedStatement = connection.prepareStatement(
-                     "INSERT INTO Reminders (Date, Description) VALUES (?, ?)")) {
-            preparedStatement.setDate(1, java.sql.Date.valueOf(rm.getDate()));
-            preparedStatement.setString(2, rm.getDescription());
+                     "INSERT INTO Reminders (Username, Date, Description) VALUES (?, ?, ?)")) {
+            preparedStatement.setString(1, logUser);
+            preparedStatement.setInt(2, dateToInt(date));
+            preparedStatement.setString(3, description);
             preparedStatement.executeUpdate();
         }
     }
@@ -58,29 +43,106 @@ public class DBConnectors {
     public static void deleteReminder(Reminder reminder) throws SQLException {
         try (Connection connection = DBConnection.connectDB();
              PreparedStatement preparedStatement = connection.prepareStatement(
-                     "DELETE FROM Reminders WHERE Date = ? AND Description = ?")) {
-            preparedStatement.setDate(1, java.sql.Date.valueOf(reminder.getDate()));
-            preparedStatement.setString(2, reminder.getDescription());
+                     "DELETE FROM Reminders WHERE Username = ? AND Date = ? AND Description = ?")) {
+            preparedStatement.setString(1, logUser);
+            preparedStatement.setInt(2, reminder.getDate());
+            preparedStatement.setString(3, reminder.getDescription());
             preparedStatement.executeUpdate();
         }
     }
 
-    public static List<Reminder> getRemindersForDate(LocalDate date) throws SQLException {
-        List<Reminder> remindersForDate = new ArrayList<>();
-        String query = "SELECT Date, Description FROM Reminders WHERE Date = ?";
+
+
+
+    public static List<Reminder> getRemindersForDate(int date) throws SQLException {
+        List<Reminder> remindersForUserAndDate = new ArrayList<>();
+        String query = "SELECT Date, Description FROM Reminders WHERE Username = ? AND Date = ?";
         try (Connection connection = DBConnection.connectDB();
              PreparedStatement ps = connection.prepareStatement(query)) {
-            ps.setDate(1, java.sql.Date.valueOf(date));
+            ps.setString(1, logUser);
+            ps.setInt(2, date);
+
             try (ResultSet rs = ps.executeQuery()) {
                 while (rs.next()) {
-                    LocalDate reminderDate = rs.getDate("Date").toLocalDate();
+                    int reminderDateAsInt = rs.getInt("Date");
                     String description = rs.getString("Description");
-                    Reminder reminder = new Reminder(reminderDate, description);
-                    remindersForDate.add(reminder);
+
+                    Reminder reminder = new Reminder(reminderDateAsInt, description);
+                    remindersForUserAndDate.add(reminder);
                 }
             }
         }
-        return remindersForDate;
+        return remindersForUserAndDate;
     }
+
+    public static List<Reminder> getAllReminders() {
+        List<Reminder> reminders = new ArrayList<>();
+
+        try (Connection conn = DBConnection.connectDB()) {
+            String query = "SELECT Date, Description FROM Reminders WHERE Username = ?";
+            PreparedStatement ps = conn.prepareStatement(query);
+            ps.setString(1, logUser);
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+                int dateAsInt = rs.getInt("Date");
+                String description = rs.getString("Description");
+
+                Reminder reminder = new Reminder(dateAsInt, description);
+                reminders.add(reminder);
+            }
+
+            rs.close();
+            ps.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            // Handle the exception appropriately
+        }
+
+        return reminders;
+    }
+
+
+    private static int dateToInt(LocalDate date) {
+
+        return Integer.parseInt(date.format(DateTimeFormatter.ofPattern("yyyyMMdd")));
+    }
+
+    static LocalDate intToDate(int dateInt) {
+        String dateStr = String.valueOf(dateInt);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
+        return LocalDate.parse(dateStr, formatter);
+    }
+
+
+    public static Fruit fetchFruitDetails(String fruitName) {
+        Fruit fruit = null;
+        Connection connection = null;
+        try {
+            connection = DBConnection.connectDB();
+            String query = "SELECT * FROM fruits WHERE name = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setString(1, fruitName);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            if (resultSet.next()) {
+                String name = resultSet.getString("name");
+                String description = resultSet.getString("description");
+                String additionalInfo = resultSet.getString("additional_info");
+
+                // Create a Fruit object with retrieved data
+                fruit = new Fruit();
+                fruit.setName(name);
+                fruit.setdescription(description);
+                fruit.setadditional_info(additionalInfo);
+            }
+        } catch (SQLException e) {
+            System.out.println("Can't get the fruit details");
+        } finally {
+            DBConnection.closeConnection(connection);
+        }
+        return fruit;
+    }
+
 
 }

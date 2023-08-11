@@ -14,6 +14,8 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.Objects;
 
+import static com.example.fruitsapp.LoginController.logUser;
+
 public class ProfileController {
 
     @FXML
@@ -45,6 +47,9 @@ public class ProfileController {
 
     @FXML
     private ImageView close;
+
+    @FXML
+    private ImageView Enable;
 
     @FXML
     private TextField enterFirstname;
@@ -88,8 +93,8 @@ public class ProfileController {
         setTooltip(Logout, "Logout");
         setTooltip(Reminders, "Reminders");
         displayUserData();
-        DBConnectors.GetUserinfo(enterFirstname, enterLastname, enterUsername, enterPassword, LoginController.logUser);
-        System.out.println(LoginController.logUser);
+        DBConnectors.GetUserinfo(enterFirstname, enterLastname, enterUsername, enterPassword, logUser);
+        System.out.println(logUser);
     }
 
     @FXML
@@ -111,7 +116,7 @@ public class ProfileController {
         try (Connection conn = DriverManager.getConnection("jdbc:sqlite:fruits.sqlite")) {
             String query = "SELECT Firstname, Lastname, Password FROM User WHERE Username = ?";
             PreparedStatement ps = conn.prepareStatement(query);
-            ps.setString(1, LoginController.logUser);
+            ps.setString(1, logUser);
             ResultSet rs = ps.executeQuery();
 
             if (rs.next()) {
@@ -122,7 +127,7 @@ public class ProfileController {
                 enterFirstname.setText(firstName);
                 enterLastname.setText(lastName);
                 enterPassword.setText(password);
-                enterUsername.setText(LoginController.logUser);
+                enterUsername.setText(logUser);
 
                 System.out.println("User data displayed: " + firstName + ", " + lastName + ", " + password + ", " + loggedInUsername);
             } else {
@@ -133,14 +138,57 @@ public class ProfileController {
         }
     }
 
+    @FXML
+    void makeVisible(MouseEvent event) {
+        enterFirstname.setDisable(!enterFirstname.isDisabled());
+        enterLastname.setDisable(!enterLastname.isDisabled());
+        enterUsername.setDisable(!enterUsername.isDisabled());
+        enterPassword.setDisable(!enterPassword.isDisabled());
+    }
 
 
 
 
     @FXML
     void Editinfo(MouseEvent event) {
+        String newUsername = enterUsername.getText();
+        String newFirstName = enterFirstname.getText();
+        String newLastName = enterLastname.getText();
+        String newPassword = enterPassword.getText();
 
+        if (newUsername.isEmpty() || newFirstName.isEmpty() || newLastName.isEmpty() || newPassword.isEmpty()) {
+            showInfoAlert("No changes made.");
+            return;
+        }
+
+        try (Connection conn = DriverManager.getConnection("jdbc:sqlite:fruits.sqlite")) {
+            String updateQuery = "UPDATE User SET Username = ?, Firstname = ?, Lastname = ?, Password = ? WHERE Username = ?";
+            PreparedStatement ps = conn.prepareStatement(updateQuery);
+            ps.setString(1, newUsername);
+            ps.setString(2, newFirstName);
+            ps.setString(3, newLastName);
+            ps.setString(4, newPassword);
+            ps.setString(5, logUser);
+            int rowsUpdated = ps.executeUpdate();
+
+            if (rowsUpdated > 0) {
+                logUser = newUsername;
+                showInfoAlert("User information updated successfully.");
+            } else {
+                showInfoAlert("Failed to update user information.");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
+
+    private void showInfoAlert(String message) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
+    }
+
 
     @FXML
     void moveAbout(MouseEvent event) throws IOException {

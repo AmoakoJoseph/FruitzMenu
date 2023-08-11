@@ -5,14 +5,19 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-    public static Connection connectDB() {
-        try {
-            String url = "jdbc:sqlite:fruits.sqlite"; // Replace with the correct path to your database file
-            Connection conn = DriverManager.getConnection(url);
-            return conn;
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return null;
+    private static final String DATABASE_URL = "jdbc:sqlite:fruits.sqlite";
+
+    public static Connection connectDB() throws SQLException {
+        return DriverManager.getConnection(DATABASE_URL);
+    }
+
+    public static void closeConnection(Connection connection) {
+        if (connection != null) {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

@@ -1,19 +1,19 @@
 package com.example.fruitsapp;
 
 import java.time.LocalDate;
-import java.util.StringTokenizer;
+import java.time.format.DateTimeFormatter;
 
 public class Reminder {
 
-    private LocalDate date;
+    private final int date;
     private String description;
 
-    public Reminder(LocalDate date, String description) {
+    public Reminder(int date, String description) {
         this.date = date;
         this.description = description;
     }
 
-    public LocalDate getDate() {
+    public int getDate() {
         return date;
     }
 
@@ -21,23 +21,14 @@ public class Reminder {
         return description;
     }
 
-
-    public static Reminder parseReminder(String line) {
-        StringTokenizer tokenizer = new StringTokenizer(line, ",");
-        LocalDate date = LocalDate.parse(tokenizer.nextToken());
-        String description = tokenizer.nextToken().trim();
-        return new Reminder(date, description);
-    }
-
-
-    public String toDataString() {
-        return date + "," + description;
-    }
-
-
-
-
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String toDataString() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate localDate = LocalDate.ofEpochDay(date);
+        String formattedDate = localDate.format(formatter);
+        return formattedDate + "," + description + ",";
     }
 }
